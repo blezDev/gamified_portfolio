@@ -1,4 +1,4 @@
-export function displayDialogue(text, onDisplayEnd) {
+export function displayDialogue(text, onDisplayEnd,name) {
     const dialogueUi = document.getElementById("textbox-container");
     const dialogue = document.getElementById("dialogue");
 
@@ -15,6 +15,16 @@ export function displayDialogue(text, onDisplayEnd) {
         }
         clearInterval(intervalRef);
     }, 5);
+
+
+    if (name ==="sofa-table") {
+        document.getElementById('game-embedded').style.display = 'block';
+        document.getElementById('iframe-wrapper').style.display = 'block';
+
+    }else{
+        document.getElementById('game-embedded').style.display = 'none';
+        document.getElementById('iframe-wrapper').style.display = 'none';
+    }
 
     const closeBtn = document.getElementById("close");
 
@@ -35,6 +45,24 @@ export function displayDialogue(text, onDisplayEnd) {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export function setCamScale(k) {
     const resizeFactor = k.width() / k.height();
     if (resizeFactor < 1) {

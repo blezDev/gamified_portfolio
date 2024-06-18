@@ -59,7 +59,8 @@ k.scene("main", async () => {
                         player.isInDialogue = true;
                         displayDialogue(
                             dialogueData[boundary.name],
-                            () => (player.isInDialogue = false)
+                            () => (player.isInDialogue = false),
+                            boundary.name
                         );
                     });
                 }
