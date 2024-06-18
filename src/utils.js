@@ -17,14 +17,6 @@ export function displayDialogue(text, onDisplayEnd,name) {
     }, 5);
 
 
-/*    if (name ==="sofa-table") {
-        document.getElementById('game-embedded').style.display = 'block';
-        document.getElementById('iframe-wrapper').style.display = 'block';
-
-    }else{
-        document.getElementById('game-embedded').style.display = 'none';
-        document.getElementById('iframe-wrapper').style.display = 'none';
-    }*/
 
     const closeBtn = document.getElementById("close");
 
